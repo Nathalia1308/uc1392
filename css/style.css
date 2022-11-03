@@ -1,0 +1,31 @@
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&display=swap');
+
+html{
+    font-family: 'Courier New', Courier, monospace;
+}
+h1{
+    font-weight: 700;
+    font-size: 2em;
+}
+
+h2{
+    font-weight: 400;
+    font-size: 1.8em;
+}
+
+h3{
+    font-weight: 100;
+    font-size: 1.6em;
+}
+div{
+    border: 3px solid blue;
+}
+
+.container{
+    background-color: lightslategray;
+}
+
+#nome-empresa{
+    color: aqua;
+}
