@@ -3,15 +3,36 @@
 include 'conecta.php';
 
 // cria a consulta sql
-$consulta = "select * from filme";
+$consultaSql = "select * from filme order by titulo asc";
 
 // trazer a lista completa dos dados 
-$lista = $pdo->query("$consulta");
+$lista = $pdo->query("$consultaSql");
 
 // separar os dados em linhas
 
-$linha = $lista->fetch();
-$num_linhas = $lista->rowCount();
+// $linha = $lista->fetch();
+
+$row = $lista->fetch();
+
+// retornando o número de linhas
+
+// $num_linhas = $lista->rowCount();
+
+$num_rows = $lista->rowCount();
+
+if(isset($_POST['enviar'])){
+    $titulo = $_POST['titulo'];
+    $sinopse = $_POST['sinopse'];
+    $lancamento = $_POST['lancamento'];
+
+    $consulta = "inset filme (titulo, sinopse, lancamento) values ('$titulo','$sinopse','$lancamento')";
+    $resultado = $pdo->query($)
+}
+
+
+
+
+
 // echo 'A consulta retornou <stong>'.$num_linhas. ' </strong> Filmes <br>';
 
 // do{

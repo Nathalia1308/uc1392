@@ -19,9 +19,6 @@ h3{
     font-weight: 100;
     font-size: 1.6em;
 }
-div{
-    border: 3px solid blue;
-}
 
 .container{
     background-color: lightslategray;
@@ -50,3 +47,6 @@ input{
 #btn-enviar{
     margin-bottom: 20px;
 }
+/* .formulario{
+    background-color: aquamarine;
+}  */
